@@ -22,7 +22,7 @@
 		<?php include("html/header.html"); ?>
 
 		<main>
-			<?php include("http://www.jsonet.ddns.net/html/home.php"); ?>
+			<?php include("html/home.php"); ?>
 		</main>
 		
 		<?php include("html/footer.html"); ?>
