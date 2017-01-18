@@ -1,7 +1,7 @@
 <h2>Games</h2>
 <?php
-$gamesDir = scandir("games/");
-foreach($gamesDir as $game) {
-	include("$game/index.html");
+$games = array_filter(glob('games/*'), 'is_dir');
+foreach($games as $game) {
+    echo "<iframe src=\"$game/index.html\"></iframe>";
 }
 ?>
