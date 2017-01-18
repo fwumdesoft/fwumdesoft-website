@@ -9,7 +9,7 @@
 	<script>
 		/* global $ */
 		function loadHome() {
-			$("main").load("html/home.html");
+			$("main").load("html/home.php");
 		}
 		
 		function loadAbout() {
