@@ -2,6 +2,6 @@
 <?php
 $gamesDir = scandir("games/");
 foreach($gamesDir as $game) {
-    include("$game/index.html");
+	include("$game/index.html");
 }
 ?>

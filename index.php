@@ -9,7 +9,7 @@
 	<script>
 		/* global $ */
 		function loadHome() {
-			$("main").load("jsonet.ddns.net/html/home.php");
+			$("main").load("html/home.php");
 		}
 		
 		function loadAbout() {
@@ -22,7 +22,7 @@
 		<?php include("html/header.html"); ?>
 
 		<main>
-			<?php include("html/home.html"); ?>
+			<?php include("http://www.jsonet.ddns.net/html/home.php"); ?>
 		</main>
 		
 		<?php include("html/footer.html"); ?>
