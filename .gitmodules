@@ -1,0 +1,3 @@
+[submodule "games/hexsweeper"]
+	path = games/hexsweeper
+	url = https://github.com/jcarrete5/hexsweeper
