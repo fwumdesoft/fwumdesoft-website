@@ -9,7 +9,7 @@
 	<script>
 		/* global $ */
 		function loadHome() {
-			$("main").load("html/home.php");
+			$("main").load("jsonet.ddns.net/html/home.php");
 		}
 		
 		function loadAbout() {
