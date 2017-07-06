@@ -4,7 +4,7 @@
 
 body {
 	margin: 0;
-	background-color: #cfcfcf;
+	background-color: white;
 }
 
 #page-wrapper {
@@ -17,15 +17,22 @@ body {
 */
 
 header {
-	background: #4f4f4f;
+	background: #335fa5;
+	padding-top: 1em;
 	margin-bottom: 1em;
+	box-shadow: 0px 0px 5px 1px black
+	/*z-index: 3;*/
 }
 
 header h1 {
 	margin: 0;
 	margin-left: 0.25em;
-	color: #96CCFF;
+	color: #7b98b8;
 	text-shadow: 1px 1px black;
+}
+
+header nav {
+	margin-top: 1em;
 }
 
 header nav ul {
@@ -36,7 +43,7 @@ header nav ul {
 }
 
 header nav ul li a:hover {
-	background-color: #171717;
+	background-color: #003c6e;
 }
 
 header nav ul li a {
