@@ -43,18 +43,21 @@ header>nav>ul {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
-	overflow: auto;
+}
+
+header>nav>ul>li {
+	display: inline;
+}
+
+header>nav>ul>li>a {
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	padding: 0.5em 0.75em;
 }
 
 header>nav>ul>li>a:hover {
 	background-color: #003c6e;
-}
-
-header>nav>ul>li>a {
-	color: white;
-	float: left;
-	padding: 0.5em 0.75em;
-	text-decoration: none;
 }
 
 /*
