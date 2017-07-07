@@ -14,7 +14,7 @@
       <nav>
         <ul>
           <li><a href="/index.html">Home</a></li>
-          <li><a href="/html/games.php">Web Games</a></li>
+          <li><a href="/games/games.php">Web Games</a></li>
           <li><a href="/public-files/">Public Files</a></li>
         </ul>
       </nav>
@@ -22,10 +22,10 @@
     <main>
       <h2>Games</h2>
       <?php
-        $gamesdir = new DirectoryIterator("../games/");
+        $gamesdir = new DirectoryIterator(".");
         foreach ($gamesdir as $gamedir) {
-          if (!$gamedir->isDot()) {
-            echo "<iframe width=\"100%\" height=\"705px\" frameborder=\"0\" scrolling=\"no\" style=\"display:block;\" src=\"../games/$gamedir/index.html\"></iframe>";
+          if (!$gamedir->isDot() && $gamedir->isDir()) {
+            echo "<iframe width=\"100%\" height=\"705px\" frameborder=\"0\" scrolling=\"no\" style=\"display:block;\" src=\"$gamedir/index.html\"></iframe>";
           }
         }
       ?>
@@ -33,5 +33,5 @@
     <footer>
       <small>&copy; 2017 by Jason R. Carrete</small>
     </footer>
-  </body
+  </body>
 </html>
