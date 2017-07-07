@@ -13,7 +13,7 @@
       <h1>Jsonet <span class="page-qualifier">Home</span></h1>
       <nav>
         <ul>
-          <li><a href="/index.html">Home</a></li>
+          <li><a href="/index.php">Home</a></li>
           <li><a href="/games/games.php">Web Games</a></li>
           <li><a href="/public-files/">Public Files</a></li>
         </ul>
@@ -31,9 +31,6 @@
         </p>
       </section>
     </main>
-    <footer>
-      <small id="copyright">&copy; 2017 by Jason R. Carrete</small>
-      <small><a href="https://github.com/jcarrete5/jsonet-website/">Page Source</a></small>
-    </footer>
+    <?php include $_SERVER['DOCUMENT_ROOT'].'/html/footer.html' ?>
   </body>
 </html>
