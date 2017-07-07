@@ -71,7 +71,22 @@ main {
 */
 
 footer {
-	color: #7f7f7f;
-	text-align: center;
+	display: flex;
+	justify-content: space-around;
 	margin-top: 3em;
+	margin-bottom: 1.5em;
+	font-size: smaller;
+	color: #7f7f7f;
+}
+
+footer>ul.links {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+footer>ul.links>li {
+	display: inline;
+	margin: 0;
+	padding: 0.25em;
 }
