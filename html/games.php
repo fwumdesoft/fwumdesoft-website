@@ -22,15 +22,16 @@
     <main>
       <h2>Games</h2>
       <?php
-        $games = array_filter(glob('/games/*'), 'is_dir');
-        foreach($games as $game) {
-          echo "<iframe width=\"100%\" height=\"705px\" frameborder=\"0\" scrolling=\"no\"
-          style=\"display:block;\"  src=\"$game/index.html\"></iframe>";
+        $gamesdir = new DirectoryIterator("../games/");
+        foreach ($gamesdir as $gamedir) {
+          if (!$gamedir->isDot()) {
+            echo "<iframe width=\"100%\" height=\"705px\" frameborder=\"0\" scrolling=\"no\" style=\"display:block;\" src=\"../games/$gamedir/index.html\"></iframe>";
+          }
         }
-      ?>
+      ?>   
     </main>
     <footer>
       <small>&copy; 2017 by Jason R. Carrete</small>
     </footer>
-  </body>
+  </body
 </html>
