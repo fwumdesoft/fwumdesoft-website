@@ -12,6 +12,11 @@ body {
 	color: #d2dde9;
 }
 
+section>.section-header {
+	border-left: 10px solid #335fa5;
+	padding-left: 10px;
+}
+
 /*
 	=header
 */
