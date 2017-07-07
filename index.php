@@ -11,13 +11,7 @@
   <body>
     <header>
       <h1>Jsonet <span class="page-qualifier">Home</span></h1>
-      <nav>
-        <ul>
-          <li><a href="/index.php">Home</a></li>
-          <li><a href="/games/games.php">Web Games</a></li>
-          <li><a href="/public-files/">Public Files</a></li>
-        </ul>
-      </nav>
+      <?php include $_SERVER['DOCUMENT_ROOT'].'/html/navbar.html'; ?>
     </header>
     <main>
       <section>
@@ -31,6 +25,6 @@
         </p>
       </section>
     </main>
-    <?php include $_SERVER['DOCUMENT_ROOT'].'/html/footer.html' ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'].'/html/footer.html'; ?>
   </body>
 </html>
