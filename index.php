@@ -15,7 +15,7 @@
     </header>
     <main>
       <section>
-        <h2 class="section-header">About this webpage</h2>
+        <h2 class="section-header">About this website</h2>
         <p>
           This webpage is hosted on some old computer made in the early 00s in my basement.
           As it approaches the end of its life, I humbly request that you do not DDoS this address (poor computer can
