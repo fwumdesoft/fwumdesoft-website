@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# Copies website files to the server
+
+FILES_TO_COPY='
+ascii
+css
+games
+favicon.png
+footer.html
+index.php
+LICENSE.txt
+navbar.html'
+
+
+# Add my rsa identity to make copying quicker
+ssh-add ~/.ssh/jcarrete@jsonet.id_rsa
+
+# Copy specified files into Apache server directory
+for file in ${FILES_TO_COPY}; do
+    rsync -vr "${file}" "jsonet:/var/www/html/"
+done
