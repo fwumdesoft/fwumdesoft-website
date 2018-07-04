@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# Copies website files to the server
+
+FILES_TO_COPY='
+ascii
+css
+games
+favicon.png
+footer.html
+index.php
+LICENSE.txt
+navbar.html'
+
+for file in ${FILES_TO_COPY}; do
+    scp -r "${file}" "jsonet:/var/www/html/${file}"
+done
