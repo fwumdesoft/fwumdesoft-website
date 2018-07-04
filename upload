@@ -11,6 +11,11 @@ index.php
 LICENSE.txt
 navbar.html'
 
+
+# Add my rsa identity to make copying quicker
+ssh-add ~/.ssh/jcarrete@jsonet.id_rsa
+
+# Copy specified files into Apache server directory
 for file in ${FILES_TO_COPY}; do
-    scp -r "${file}" "jsonet:/var/www/html/${file}"
+    rsync -vr "${file}" "jsonet:/var/www/html/"
 done
