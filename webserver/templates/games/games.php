@@ -5,13 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Jason R. Carrete">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/static/css/style.css">
     <link rel="icon" href="/favicon.png">
   </head>
   <body>
     <header>
       <h1>Jsonet <span class="page-qualifier">Games</span></h1>
-      <?php include $_SERVER['DOCUMENT_ROOT'].'/html/navbar.html'; ?>
+      <?php include $_SERVER['DOCUMENT_ROOT'] . '/html/navbar.html'; ?>
     </header>
     <main>
       <h2>Games</h2>
@@ -24,6 +24,6 @@
         }
       ?>
     </main>
-    <?php include $_SERVER['DOCUMENT_ROOT'].'/html/footer.html'; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/html/footer.html'; ?>
   </body>
 </html>

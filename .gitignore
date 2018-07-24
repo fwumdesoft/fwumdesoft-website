@@ -1,2 +1,6 @@
-.c9/
-public-files/
+# Python
+venv/
+__pycache__/
+
+# IDEA Project
+.idea/**/workspace.xml

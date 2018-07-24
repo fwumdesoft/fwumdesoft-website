@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+# Uploads server website files to the remote web server.
+# Author: Jason R. Carrete
