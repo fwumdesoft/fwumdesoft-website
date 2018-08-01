@@ -11,7 +11,7 @@
   <body>
     <header>
       <h1>Jsonet <span class="page-qualifier">Games</span></h1>
-      <?php include $_SERVER['DOCUMENT_ROOT'] . '/html/navbar.html'; ?>
+      <?php include $_SERVER['DOCUMENT_ROOT'] . '/html/header.html'; ?>
     </header>
     <main>
       <h2>Games</h2>

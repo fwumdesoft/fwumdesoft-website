@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Jason R. Carrete">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href={{ url_for('static', filename='css/base.css') }}>
+  <link rel="icon" href={{ url_for('static', filename="favicon.png") }}>
+  <title>{% block title %}{% endblock %} - Jsonet</title>
+</head>
+<body>
+  <header>
+    {% block header %}{% endblock %}
+    <nav>
+      <ul>
+        <li><a href={{ url_for('index') }}>Home</a></li>
+        <li><a href="games/games.php">Web Games</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    {% block main_content %}{% endblock %}
+  </main>
+  <footer>
+    <span>&copy; 2017 Jason R. Carrete</span>
+    <ul class="links">
+      <li><a href="https://github.com/jcarrete5/jsonet-website/">Page Source</a></li>
+      <li><a href="/LICENSE.txt">License</a></li>
+    </ul>
+  </footer>
+</body>
+</html>
