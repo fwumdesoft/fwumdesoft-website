@@ -1,0 +1,4 @@
+[submodule "apps/hexsweeper"]
+	path = apps/hexsweeper
+	url = https://github.com/jcarrete5/hexsweeper
+	branch = jsonet

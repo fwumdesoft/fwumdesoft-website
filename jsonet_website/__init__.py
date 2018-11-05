@@ -1,4 +1,5 @@
-from flask import Flask, render_template, url_for, current_app
+from flask import Flask, render_template
+from . import apps
 
 
 # Flask automatically detects this function as the application factory function
@@ -11,4 +12,5 @@ def create_app(config_file=None):
     def index():
         return render_template('index.html')
 
+    app.register_blueprint(apps.bp)
     return app
